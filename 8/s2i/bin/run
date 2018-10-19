@@ -22,6 +22,10 @@ run_node() {
     exec nodemon --inspect="$DEBUG_PORT"
   else
     echo "Launching via npm..."
+    exec npm install express
+    exec npm install morgan
+    exec npm install object-assign
+    exec npm install ejs
     exec npm run -d $NPM_RUN
   fi
 } 
