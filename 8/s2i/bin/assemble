@@ -99,7 +99,8 @@ else
 		echo "---> Cleaning the $NPM_TMP/npm-*"
 		rm -rf $NPM_TMP/npm-*
 	fi
-
+	npm install express
+	npm install morgan
 fi
 
 # Fix source directory permissions

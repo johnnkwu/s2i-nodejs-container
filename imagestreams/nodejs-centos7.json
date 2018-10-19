@@ -97,7 +97,7 @@
           "iconClass": "icon-nodejs",
           "tags": "builder,nodejs",
           "version": "8",
-          "sampleRepo": "https://github.com/sclorg/nodejs-ex.git"
+          "sampleRepo": "https://github.com/johnnkwu/nodejs-ex.git"
         },
         "from": {
           "kind": "DockerImage",
