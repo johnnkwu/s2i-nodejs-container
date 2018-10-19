@@ -22,10 +22,6 @@ run_node() {
     exec nodemon --inspect="$DEBUG_PORT"
   else
     echo "Launching via npm..."
-    exec npm install express
-    exec npm install morgan
-    exec npm install object-assign
-    exec npm install ejs
     exec npm run -d $NPM_RUN
   fi
 } 
@@ -49,6 +45,11 @@ if [ -z "$NODE_ENV" ]; then
     export NODE_ENV=production
   fi
 fi
+
+npm install express 
+npm install morgan
+npm install object-assign
+npm install ejs
 
 # If the official dockerhub node image is used, skip the SCL setup below
 # and just run the nodejs server
